@@ -1,21 +1,8 @@
-/* eslint-disable @typescript-eslint/no-var-requires,@typescript-eslint/no-explicit-any */
 /**
  * @jest-environment node
  */
 import logger from '../src/logger';
-const parse = require('csv-parse');
-
-const parseCsv = (input: string): Promise<any> => {
-  return new Promise<any>((resolve, reject) => {
-    parse(input, {}, function (err: any, output: any) {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(output);
-      }
-    });
-  });
-};
+import { parseCsv } from '../src/parse-csv';
 
 describe('transform', () => {
   it('transform crowdnode csv to bitcoin tax csv', async () => {
