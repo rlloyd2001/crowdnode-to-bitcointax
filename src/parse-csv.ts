@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires,@typescript-eslint/no-explicit-any */
-import logger from '../src/logger';
+import logger from './logger';
 const parse = require('csv-parse');
 
 export const parseCsv = (input: string): Promise<any> => {
