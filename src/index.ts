@@ -28,9 +28,9 @@ const transformCrowdnode = (input: string[][], year: string): string[][] => {
       map.set(key, Number(row[1]));
     }
   }
-  const retval = [['Date', 'Action', 'Symbol', 'Volume']];
+  const retval = [['Date', 'Action', 'Account', 'Symbol', 'Volume']];
   for (const [key, value] of map) {
-    retval.push([key, 'MINING', 'DASH', Number(value).toFixed(10)]);
+    retval.push([key, 'MINING', 'Crowdnode', 'DASH', Number(value).toFixed(10)]);
   }
   return retval;
 };
