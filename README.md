@@ -16,3 +16,13 @@ Not tested much, use at your own risk.
 ```bash
 npm run start -- FundsOverview.csv output.csv 2020
 ```
+
+## Donate with PayPal or Monero
+
+Did you find this helpful? Leave a tip here.
+
+### PayPal
+https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=rlloyd2001%40gmail.com&currency_code=USD
+
+### XMR Address
+47cyVWpADRPUnTEVLmtaVXQjPtK4Viufk8MfMy3u3abjARdgLX8A2moi2PsPYDBEcWFMACMzCYq7T5bWdogAEVaRTebZ2k4
