@@ -1,7 +1,12 @@
 # Crowdnode To BitcoinTax
 
-Download excel file from crowdnode save it as a .csv to use with this script.  
-Not tested much, use at your own risk.  
+This script has saved me many hours of data entry for interest earned.
+What this script does is take a .csv file from CrowdNode and create a .csv file that can be
+uploaded into the Income section of bitcoin.tax.
+
+Download excel file from crowdnode save it as a .csv to use with this script.
+
+Not tested much. Review your generated .csv before uploading to bitcoin.tax to make sure it is what you are needing.
 
 ## Prerequisites
 *   NodeJs (v14.x)
