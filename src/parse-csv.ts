@@ -2,7 +2,7 @@
 import logger from './logger';
 const parse = require('csv-parse');
 
-export const parseCsv = (input: string): Promise<any> => {
+export const parseCsv = (input: string): Promise<string[][]> => {
   return new Promise<any>((resolve, reject) => {
     parse(input, {}, function (err: any, output: any[]) {
       if (err) {
