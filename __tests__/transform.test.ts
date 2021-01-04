@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires,@typescript-eslint/no-explicit-any */
 /**
  * @jest-environment node
  */
@@ -6,7 +7,7 @@ const parse = require('csv-parse');
 
 const parseCsv = (input: string): Promise<any> => {
   return new Promise<any>((resolve, reject) => {
-    parse(input, {}, function(err: any, output: any) {
+    parse(input, {}, function (err: any, output: any) {
       if (err) {
         reject(err);
       } else {
@@ -27,6 +28,6 @@ Deposit,2.62653462,1603842565,12/31/2020,12345,Valid
 Dividend,2,1609437722,12/31/2020,12345,Valid
 Fee,-1,1609437722,12/31/2020,12345,Valid`;
     const output = await parseCsv(crowdnodeCsvData);
-    console.log(JSON.stringify(output));
+    logger.info('', { output });
   });
 });
